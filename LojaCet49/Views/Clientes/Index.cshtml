@@ -28,7 +28,8 @@
                 @Html.DisplayNameFor(model => model.NumContribuinte)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DataNasc)
+                <!-- @Html.DisplayNameFor(model => model.DataNasc) -->
+                <p>Idade</p>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.UltimaCompra)
@@ -61,7 +62,8 @@
                 @Html.DisplayFor(modelItem => item.NumContribuinte)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataNasc)
+                <!-- @Html.DisplayFor(modelItem => item.DataNasc) -->
+                @Math.Floor((DateTime.Now - item.DataNasc).TotalDays/365.25)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UltimaCompra)
