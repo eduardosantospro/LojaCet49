@@ -12,6 +12,8 @@ namespace LojaCet49.Dados
         */
         public DbSet<Produto> Produtos { get; set; }
 
+        public DbSet<Cliente> Clientes { get; set; }
+
         /*
          * options é o nome que quiseremos da variavel
          * 
